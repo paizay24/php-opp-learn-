@@ -8,18 +8,27 @@ echo "<pre>";
 // require_once'./classes/Db.php';
 // require_once "./classes/QueryBuilder.php";
 // require_once './classes/TextFilter.php';
-require_once "./classes/BankAccount.php";
+// require_once "./classes/BankAccount.php";
+require_once "./autoload.php";
 
 
 
-$BankAcc = new BankAccount('pai zay oo',3000);
-$BankAcc->deposit(2000);
-$BankAcc->withdraw(4000);
-echo $BankAcc->onlineDeposit("kpay",5000);
+// $BankAcc = new BankAccount('pai zay oo',3000);
+// $BankAcc->deposit(2000);
+// $BankAcc->withdraw(4000);
+// echo $BankAcc->onlineDeposit("kpay",5000);
 
+$course = new Course;
+print_r($course->select()->all());
 
+// echo $BankAcc->checkBalance();
 
-echo $BankAcc->checkBalance();
+// $child = new ChildClass();
+// print_r($child);
+
+// $m = new Model();
+// print_r($m->select()->limit(10)->all());
+
 
 
 // $queryBuilder = new QueryBuilder('students');
