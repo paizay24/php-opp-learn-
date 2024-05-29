@@ -13,13 +13,19 @@ require_once "./autoload.php";
 
 
 
+$req = new Request;
+echo $req->files();
+echo $req->file();
+echo $req->get();
+
+
 // $BankAcc = new BankAccount('pai zay oo',3000);
 // $BankAcc->deposit(2000);
 // $BankAcc->withdraw(4000);
 // echo $BankAcc->onlineDeposit("kpay",5000);
 
-$course = new Course;
-print_r($course->select()->all());
+// $course = new Course;
+// print_r($course->select()->all());
 
 // echo $BankAcc->checkBalance();
 
